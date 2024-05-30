@@ -28,6 +28,12 @@ input {
 	height: 1.5rem;
 	background-color: transparent;
 	border: #e1eeeb solid 1px;
+	cursor: pointer;
+}
+
+input:focus {
+	background-color: #89c6b8;
+	outline: #209266;
 }
 
 .row {
