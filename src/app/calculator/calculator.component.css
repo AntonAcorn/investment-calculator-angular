@@ -1,4 +1,16 @@
-h1 {
+label {
 	text-align: center;
 	color: #e1eeeb;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: 5rem;
+	padding-top: 3rem;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
 }
