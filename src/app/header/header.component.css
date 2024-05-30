@@ -9,7 +9,6 @@ h1 {
   margin: 0;
   text-align: center;
   padding-top: 4rem;
-  /* Убираем лишний отступ слева и перемещаем левый отступ на верхнюю позицию */
   padding-left: 0;
 }
 
