@@ -1,0 +1,22 @@
+header {
+	margin-top: 3rem;
+  padding-top: 5rem;
+  position: relative;
+}
+
+h1 {
+  color: #e1eeeb;
+  margin: 0;
+  text-align: center;
+  padding-top: 4rem;
+  /* Убираем лишний отступ слева и перемещаем левый отступ на верхнюю позицию */
+  padding-left: 0;
+}
+
+img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  top: 0; 
+  width: 8rem;
+}
