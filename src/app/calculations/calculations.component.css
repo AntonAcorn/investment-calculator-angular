@@ -1,0 +1,15 @@
+.tableForm {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin-top: 2rem;
+}
+
+table {
+	color: antiquewhite;
+	border-spacing: 1rem;
+}
+
+th {
+	font-size: 0.9rem;
+}
