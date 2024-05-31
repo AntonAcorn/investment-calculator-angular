@@ -1,21 +1,17 @@
 header {
-	margin-top: 3rem;
-  padding-top: 5rem;
-  position: relative;
+	text-align: center;
+	margin-top: 5rem;
+	padding-top: 2rem;
 }
 
-h1 {
+header img {
+	width: 12rem;
+	height: 6rem;
+	background: transparent;
+	object-fit: contain;
+}
+
+header h1 {
   color: #e1eeeb;
   margin: 0;
-  text-align: center;
-  padding-top: 4rem;
-  padding-left: 0;
-}
-
-img {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); 
-  top: 0; 
-  width: 8rem;
 }
