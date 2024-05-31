@@ -9,7 +9,7 @@ main {
 	justify-content: center;
 	margin: 0;
 	background: linear-gradient(#257863, #209266);
-	height: 38vh;
+	height: 19.6rem;
 	width: 30rem;
 	border-radius: 2px;
 }
@@ -55,6 +55,11 @@ button {
 	height: 2rem;
 	border-radius: 2px;
 	border: none;
+	
+}
+
+button:active,
+button:hover {
 	cursor: pointer;
 	background-color: #a6dace;
 }
