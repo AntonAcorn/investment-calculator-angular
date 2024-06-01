@@ -17,7 +17,7 @@ main {
 label {
 	font-weight: bold;
 	text-align: left;
-	color: #e1eeeb;
+	color: #faebd7;
 	padding-bottom: 0.4rem;
 }
 
@@ -27,17 +27,19 @@ input {
 	width: 10rem;
 	height: 1.9rem;
 	background-color: transparent;
-	border: #e1eeeb solid 1px;
+	border: #faebd7 solid 1px;
 	cursor: pointer;
+	color: #faebd7;
 }
 
 input:focus {
-	background-color: #89c6b8;
+	background-color: #377b5a;
 	outline: #209266;
 }
 
 .row {
 	display: flex;
+	justify-content: center;
 	flex-direction: row;
 	gap: 5rem;
 	padding-top: 2.8rem;
@@ -55,7 +57,9 @@ button {
 	height: 2rem;
 	border-radius: 2px;
 	border: none;
-	
+	font-size: 0.9rem;
+	color: #033222;
+	font-weight: bold;
 }
 
 button:active,
