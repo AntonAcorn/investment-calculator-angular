@@ -1,4 +1,4 @@
-.tableForm {
+.table-form {
 	display: flex;
 	position: relative;
 	justify-content: center;
@@ -12,4 +12,9 @@ table {
 
 th {
 	font-size: 0.9rem;
+}
+
+.table-form p {
+	font-size: 1.68rem;
+	color: antiquewhite;
 }
