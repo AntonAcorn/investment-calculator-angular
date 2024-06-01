@@ -1,5 +1,5 @@
 <div class="table-form">
-  @if (!true) {
+  @if (!resultData) {
   <p>Please input values to calculate results!</p>
   } @else {
   <table>
@@ -13,13 +13,15 @@
       </tr>
     </thead>
     <tbody>
+			@for (item of resultData; track item.year) {
       <tr>
-        <td>1</td>
-        <td>$1200</td>
-        <td>$55</td>
-        <td>$55</td>
-        <td>$1100</td>
+        <td>{{ item.year }} </td>
+        <td>{{ item.valueEndOfYear | currency}}</td>
+        <td>{{ item.interest | currency}}</td>
+        <td>{{ item.totalInterest | currency}}</td>
+        <td>{{ item.totalAmountInvested | currency}}</td>
       </tr>
+		}
     </tbody>
   </table>
   }
