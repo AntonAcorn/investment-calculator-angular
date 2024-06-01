@@ -11,12 +11,13 @@ import { CalculationsComponent } from './calculations/calculations.component';
 	imports:[HeaderComponent, CalculatorComponent, CalculationsComponent]
 })
 export class AppComponent {
+	
 	calculateInvestmentResults(
 		initialInvestment: number, 
 		annualInvestment: number,
 		expectedReturn: number,
 		duration: number) {
-			
+
 		const annualData = [];
 		let investmentValue = initialInvestment;
 	

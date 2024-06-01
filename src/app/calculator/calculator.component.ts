@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { InvestmentData } from '../investment-input.module';
 
 @Component({
   selector: 'app-calculator',
@@ -10,18 +11,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class CalculatorComponent {
 
-	enteredInitialInvestement!: number;
-	enteredAnnualInvestment!: number;
-	enteredeExpectedReturn!: number;
-	enteredDuration!: number;
+	enteredInvestmentData = output<InvestmentData | undefined>();
+	data: InvestmentData
 	
 	onSubmit() {
-		console.log(
-			"Submitted: "  + 
-			this.enteredInitialInvestement,
-			this.enteredAnnualInvestment,
-			this.enteredeExpectedReturn,
-			this.enteredDuration
-		);
+		this.enteredInvestmentData.emit(this.enteredInvestmentData);
+		console.log("Submitted: " + this.enteredInvestmentData);
 	}
 }
