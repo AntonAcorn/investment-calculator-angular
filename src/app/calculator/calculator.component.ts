@@ -12,12 +12,16 @@ export class CalculatorComponent {
 
 	enteredInitialInvestement!: number;
 	enteredAnnualInvestment!: number;
+	enteredeExpectedReturn!: number;
+	enteredDuration!: number;
 	
 	onSubmit() {
 		console.log(
 			"Submitted: "  + 
 			this.enteredInitialInvestement,
-			this.enteredAnnualInvestment
+			this.enteredAnnualInvestment,
+			this.enteredeExpectedReturn,
+			this.enteredDuration
 		);
 	}
 }
