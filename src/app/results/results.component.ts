@@ -9,12 +9,12 @@ import { Component, Input } from '@angular/core';
 	imports: [CurrencyPipe]
 })
 export class ResultsComponent {
-	@Input({required: true}) resultData?: {
-		year: number,
-		interest: number,
-		valueEndOfYear: number,
-		annualInvestment: number,
-		totalInterest: number,
-		totalAmountInvested: number
-	}[];
+	// @Input({required: true}) resultData?: {
+	// 	year: number,
+	// 	interest: number,
+	// 	valueEndOfYear: number,
+	// 	annualInvestment: number,
+	// 	totalInterest: number,
+	// 	totalAmountInvested: number
+	// }[];
 }
