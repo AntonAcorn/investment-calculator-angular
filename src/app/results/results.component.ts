@@ -1,5 +1,6 @@
 import { CurrencyPipe } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { CalculatorServiceComponent } from '../service/calculator.service';
 
 @Component({
   selector: 'app-results',
@@ -9,12 +10,11 @@ import { Component, Input } from '@angular/core';
 	imports: [CurrencyPipe]
 })
 export class ResultsComponent {
-	// @Input({required: true}) resultData?: {
-	// 	year: number,
-	// 	interest: number,
-	// 	valueEndOfYear: number,
-	// 	annualInvestment: number,
-	// 	totalInterest: number,
-	// 	totalAmountInvested: number
-	// }[];
+	constructor(private calculatorService: CalculatorServiceComponent) {
+	}
+
+	get results() {
+		return this.calculatorService.resultsData;
+	}
+
 }

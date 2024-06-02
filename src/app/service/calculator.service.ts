@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { InvestmentData } from "../investment-input.module";
 
 @Injectable({ providedIn: 'root' })
-export class ServiceComponent {
+export class CalculatorServiceComponent {
 	resultsData?: {
 		year: number;
     interest: number;

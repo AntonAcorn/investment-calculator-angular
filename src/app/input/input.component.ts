@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Output, output } from '@angular/core';
+import { Component, EventEmitter, Output, inject, output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { InvestmentData } from '../investment-input.module';
+import { CalculatorServiceComponent } from '../service/calculator.service';
 
 @Component({
   selector: 'app-input',
@@ -11,8 +12,8 @@ import { InvestmentData } from '../investment-input.module';
 })
 export class InputComponent {
 
-	@Output() enteredInvestmentDataEmitter = new EventEmitter<InvestmentData>();
-
+	constructor(private calculatorService: CalculatorServiceComponent){}
+	
 	enteredInitialInvestement!: number;
 	enteredAnnualInvestment!: number;
 	enteredExpectedReturn!: number;
@@ -20,11 +21,11 @@ export class InputComponent {
 
 	
 	onSubmit() {
-		this.enteredInvestmentDataEmitter.emit({
-			initialInvestment: +this.enteredInitialInvestement,
-			annualInvestment: +this.enteredAnnualInvestment,
-			expectedReturn: +this.enteredExpectedReturn,
-			duration: +this.enteredDuration
-		});
+		this.calculatorService.onCalculateInvestmentResults({
+			initialInvestment: this.enteredInitialInvestement,
+			annualInvestment: this.enteredAnnualInvestment,
+			expectedReturn: this.enteredExpectedReturn,
+			duration: this.enteredDuration}
+		)
 	}
 }
