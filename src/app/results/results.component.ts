@@ -16,5 +16,4 @@ export class ResultsComponent {
 	get results() {
 		return this.calculatorService.resultsData;
 	}
-
 }
